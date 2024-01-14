@@ -1,8 +1,14 @@
-# React + Vite
+## 04_bg_changer
+### It is a simple project build using react that changes the color based on click of buttons.
+#### CONCEPT USED : useState() hook
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```
+TO RUN THE PROJECT
+1) Fork the main repository or you can directly download the codebase
+2) clone the repository (if you forked) using git clone 'https://github.com/{yourUsername}/React101Basics'
+3) cd 04_bg_changer
+4) npm i
+5) npm run dev
+```
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project will run on localhost and you can play with it.
