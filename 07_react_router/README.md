@@ -1,7 +1,7 @@
 # 07_react_router
 
 - It is a simple project build using react-router-dom.
-CONCEPT USED : useState(), useEffect(), useEffect(), useLoaderData() hook, Route, RouterProvider, createBrowserRouter, createRoutesFromElements, Outlet
+- CONCEPT USED : useState(), useEffect(), useEffect(), useLoaderData(), useParams hook, Route, RouterProvider, createBrowserRouter, createRoutesFromElements, Outlet
 
 ```
 TO RUN THE PROJECT
