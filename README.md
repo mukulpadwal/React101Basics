@@ -1,2 +1,7 @@
 # React101Basics
-A repository to store, the concepts along with projects that I learn in React
+
+### 01_basic_react_app
+- react app created using the cra utility
+
+### 01_vite_react_app
+- react app created using the vite
