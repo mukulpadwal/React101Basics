@@ -1,16 +1,18 @@
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from "react";
 
 function useCurrencyInfo(currency) {
-    const [data, setData] = useState({});
+  const [data, setData] = useState({});
 
-    useEffect(() => {
-        fetch(`https://cdn.jsdeliver.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`)
-        .then((res) => res.json())
-        .then((res) => setData(res[currency]))
-        .catch((error) => {console.log(error.message)});
-    }, [currency])
+  useEffect(() => {
+    fetch(`https://open.er-api.com/v6/latest/${currency.toUpperCase()}`)
+      .then((response) => response.json())
+      .then((data) => setData(data.rates))
+      .catch((err) => console.error(err));
+  }, [currency]);
 
-    return data;
+  console.log(data);
+
+  return data;
 }
 
 export default useCurrencyInfo;
