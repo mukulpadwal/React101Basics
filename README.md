@@ -17,3 +17,6 @@
 
 ### 05_password_generator
 - random password generator project (helps to understand working of useCallback(), useEffect(), useRef() hooks)
+
+### 06_currency_converter
+- real time currency converter project that uses external api to get real time conversion rate data (helps in createing custom hooks and working of useId() hook)
