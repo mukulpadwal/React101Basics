@@ -1,28 +1,28 @@
+import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 
-
 function Github() {
-    const data = useLoaderData();
-//   const [data, setData] = useState({});
+    const githubData = useLoaderData();
+//   const [githubData, setGithubData] = useState({});
+
 //   useEffect(() => {
 //     fetch("https://api.github.com/users/mukulpadwal")
-//       .then((response) => response.json())
-//       .then((response) => setData(response));
+//       .then((data) => data.json())
+//       .then((data) => setGithubData(data));
 //   }, []);
 
   return (
-    <div className="text-center m-4 bg-gray-600 text-white p-4 text-3xl">
-      Github followers :{data?.followers}
-      <div className="flex justify-center items-center p-4">
-        <img src={data?.avatar_url} alt="" />
-      </div>
+    <div className="h-screen">
+      <h1 className="p-4 bg-slate-700 text-white text-center text-3xl">Github : {githubData.followers}</h1>
+      <img className="block text-center" src={githubData.avatar_url} alt={githubData.name} width={300}/>
     </div>
   );
 }
 
 export default Github;
 
-export const githubUserLoader = async () => {
-    const response = await fetch("https://api.github.com/users/mukulpadwal");
+
+export async function githubLoaderData(){
+    const response = await fetch('https://api.github.com/users/mukulpadwal');
     return response.json();
 }
