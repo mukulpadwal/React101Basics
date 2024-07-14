@@ -1,45 +1,36 @@
-import { useState, useContext } from "react";
+import { useContext, useState } from "react";
 import UserContext from "../context/UserContext";
-import "./Login.css";
 
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const { setUser } = useContext(UserContext);
+  const { setUserData } = useContext(UserContext);
 
   const handleLogin = (e) => {
     e.preventDefault();
-    setUser({ username, password });
+    setUserData({ username, password });
   };
 
   return (
-    <div className="main-container">
-      <div>
-        <div>
-          <label htmlFor="username">UserName : </label>
-          <input
-            id="username"
-            type="text"
-            value={username}
-            onChange={(event) => setUsername(event.target.value)}
-          />
-        </div>
-      </div>
-      <div>
-        <div>
-          <label htmlFor="password">Password : </label>
-          <input
-            id="password"
-            type="password"
-            value={password}
-            onChange={(event) => setPassword(event.target.value)}
-          />
-        </div>
-      </div>
-      <div>
-        <button onClick={handleLogin}>LOGIN</button>
-      </div>
+    <div className="flex flex-col">
+      <input
+        type="text"
+        id="username"
+        className="border"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+      />
+      <input
+        type="password"
+        id="password"
+        className="border"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <button className="border" onClick={handleLogin}>
+        Login
+      </button>
     </div>
   );
 }
