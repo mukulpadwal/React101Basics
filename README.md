@@ -31,3 +31,10 @@
 ### 07_react_router_dom
 
 - simple project to understand pagination and adding links using react router dom (createBrowserRouter(), Link, NavLink, createRoutesFromElements(), RouterProvider, loader, useParams(), useLoaderData())
+
+### 08_mini_context
+
+- Simple project to understand state management using the Context Api.
+- we create a context and global data store so that we can access
+- (helps in unserstanding of createContext(), useContext() hooks)
+<img src="./08_mini_context/src/assets/context_api.png" />
