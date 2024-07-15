@@ -36,5 +36,10 @@
 
 - Simple project to understand state management using the Context Api.
 - we create a context and global data store so that we can access
-- (helps in unserstanding of createContext(), useContext() hooks)
+- (helps in understanding of createContext(), useContext() hooks)
 <img src="./08_mini_context/src/assets/context_api.png" />
+
+### 09_context_theme_switcher
+
+- A simple project that toggles between dark and light theme 
+- (helps in understanding of createContext(), useContext() and also create custom hook to access values from context dorectly by creating abstraction of useContext() hook)
