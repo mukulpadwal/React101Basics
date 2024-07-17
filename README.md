@@ -37,9 +37,15 @@
 - Simple project to understand state management using the Context Api.
 - we create a context and global data store so that we can access
 - (helps in understanding of createContext(), useContext() hooks)
-<img src="./08_mini_context/src/assets/context_api.png" />
+  <img src="./08_mini_context/src/assets/context_api.png" />
 
 ### 09_context_theme_switcher
 
-- A simple project that toggles between dark and light theme 
+- A simple project that toggles between dark and light theme
 - (helps in understanding of createContext(), useContext() and also create custom hook to access values from context dorectly by creating abstraction of useContext() hook)
+
+### 10_todo_context_local
+
+- TodoProject with CRUD functionalities
+- Created using context api (createContext(), useContext())
+- Helps understand working of localstorage to store and retrieve data
