@@ -49,3 +49,8 @@
 - TodoProject with CRUD functionalities
 - Created using context api (createContext(), useContext())
 - Helps understand working of localstorage to store and retrieve data
+
+### 11_todo_redux_toolkit
+
+- TodoProject with CRUD functionalities using `react-redux` & `redux-toolkit`
+- Helps understanding (configureStore(), createSlice(), useDispatch(), useSelector())
